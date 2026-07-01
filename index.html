@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NASA APOD Viewer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h1>🌌 NASA APOD</h1>
+
+  <div class="controles">
+    <button onclick="obtenerHoy()">Foto del día</button>
+
+    <div>
+      <label>Elegir fecha:</label>
+      <input type="date" id="inputFecha">
+      <button onclick="obtenerPorFecha()">Buscar</button>
+    </div>
+
+    <div>
+      <label>Cantidad aleatoria:</label>
+      <input type="number" id="inputCantidad" min="1" max="10">
+      <button onclick="obtenerAleatorias()">Generar</button>
+    </div>
+  </div>
+
+  <p id="textoError" class="error"></p>
+
+  <div id="galeria" class="galeria"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
